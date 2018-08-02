@@ -21,7 +21,7 @@ class Home extends CI_Controller {
 	
 	//A partir de este método utilizo la extension propia para cargar varias vistas
 	public function quienes_somos(){
-		$data = array('titulo' => 'Quienes somos');
+		$data = array('titulo' => 'Hacia donde vamos');
 		$this->load->multiple_views(array('head_view','menu_view','quienes_somos','footer_view'), $data);
 
 	}

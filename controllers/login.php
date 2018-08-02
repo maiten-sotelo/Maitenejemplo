@@ -11,7 +11,7 @@
 		
 		function index()
 		{  // reglas de validación
-			$this->form_validation->set_rules('username', 'Usuario', 'required|xss_clean');
+			$this->form_validation->set_rules('username', 'Users', 'required|xss_clean');
 			$this->form_validation->set_rules('password', 'Contraseña','md5|required|xss_clean|callback__valid_login');
 			//mensajes si falla alguna regla
 			$this->form_validation->set_message('required', 'el campo %s es requerido');
